@@ -1,0 +1,190 @@
+// Form styles - inputs, labels, validation
+
+.form-group {
+  margin-bottom: var(--spacing-6);
+}
+
+.form-label {
+  display: block;
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--spacing-2);
+  color: var(--color-text);
+}
+
+.form-label-required::after {
+  content: " *";
+  color: var(--color-error);
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+  width: 100%;
+  padding: var(--spacing-3) var(--spacing-4);
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-base);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast);
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--color-text-muted);
+}
+
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2364748b' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--spacing-4) center;
+  padding-right: var(--spacing-10);
+}
+
+.form-hint {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  margin-top: var(--spacing-2);
+}
+
+.form-error {
+  font-size: var(--font-size-sm);
+  color: var(--color-error);
+  margin-top: var(--spacing-2);
+}
+
+// Checkbox and Radio
+.form-check {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-3);
+  margin-bottom: var(--spacing-4);
+}
+
+.form-check-input {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  accent-color: var(--color-primary);
+}
+
+.form-check-label {
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+}
+
+// Form layout
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-6);
+}
+
+.form-actions {
+  display: flex;
+  gap: var(--spacing-4);
+  margin-top: var(--spacing-8);
+}
+
+// Demo form specific styles
+.scrape-form {
+  background: var(--color-background);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  padding: var(--spacing-8);
+  margin-bottom: var(--spacing-8);
+}
+
+.scrape-form-title {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-6);
+}
+
+.scrape-results {
+  background: var(--color-background-alt);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  padding: var(--spacing-6);
+  min-height: 200px;
+}
+
+.scrape-results-empty {
+  text-align: center;
+  color: var(--color-text-muted);
+  padding: var(--spacing-12) 0;
+}
+
+.scrape-result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-4);
+  background: var(--color-background);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-3);
+  border: 1px solid var(--color-border);
+}
+
+.scrape-result-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+}
+
+.scrape-result-name {
+  font-weight: var(--font-weight-semibold);
+}
+
+.scrape-result-meta {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+}
+
+.scrape-result-rating {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-accent);
+}
+
+// Contact form layout
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+// Waitlist form
+.waitlist-form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.waitlist-form .form-group {
+  text-align: left;
+}
+
+// Signup form
+.signup-form {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.signup-form .button {
+  width: 100%;
+}

@@ -1,0 +1,53 @@
+# Site settings
+title: "LeadFlow"
+description: "Find hidden local businesses with great reviews but no website"
+url: "https://leadflow.ebiya.sg"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Default values
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# CSP Nonce (generated at build time)
+csp_nonce: ""
+
+# Contact form endpoint (replace with your form handler)
+contact_endpoint: "https://formspree.io/f/YOUR_FORM_ID"
+waitlist_endpoint: "https://formspree.io/f/YOUR_WAITLIST_ID"
+
+# Social links
+social:
+  twitter: ""
+  linkedin: ""
+  github: ""
+
+# Analytics (optional)
+google_analytics: ""
